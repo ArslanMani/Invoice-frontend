@@ -16,9 +16,11 @@ html {
     font-family: 'Rubik', sans-serif;
 }
 
-body{    
+body{
     background-color: #f4f4f4;
 }
+
+/* Common classes start */
 .font-800{
     font-weight: 800;
 }
@@ -39,6 +41,13 @@ body{
 .text-gray{
     color: var(--grey-color);
 }
+.bg-theme{
+    background-color: var(---theme-color);
+}
+
+/* Common classes end */
+
+
 
 .invoice{
     max-width: 820px;
@@ -47,7 +56,7 @@ body{
 .invoice-car-logo{
     height: 2rem;
 }
-
+/*invoice-table start */
 .table-header{
     background-color: var(--light-color);
     border: 1px solid var(---light-grey-color);
@@ -58,29 +67,28 @@ body{
 
 .service-description{
     width: calc(100% - 12rem);
-    
-}
 
-.bg-theme{
-    background-color: var(---theme-color);
 }
+/*invoice-table  */
 
-.payment-info-value{
-    width:5rem;
-}
+/* info form  start*/
 .payment-info-value::after{
     content: '________';
     position: relative;
     bottom: 0;
     color: black;
 }
+/* info form  end*/
 
+
+/* Terms & Conditions start */
 .terms-heading{
     border-bottom: 2px solid var(--grey-color);
 }
 .signature{
     border-top: 1px solid black;
 }
+/* Terms & Conditions end*/
 
 @media(max-width:575px){
     html{
@@ -88,7 +96,7 @@ body{
     }
     .service-description{
         width: calc(100% - 6rem);
-        
+
     }
 }
 @media(max-width:400px){

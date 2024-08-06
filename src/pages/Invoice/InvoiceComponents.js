@@ -36,7 +36,7 @@ function InvoiceTable() {
         { id: '01', description: 'Suzuki Swift From 03.08.2024 | 05:00 To 04.08.2024 | 05:00', price: 560 },
         { id: '02', description: 'Chauffeur', price: 50 }
     ];
-
+    // the items array will be pass as  props from the higher order component 
     return (
         <div className="invoice-table mt-5">
             <div className="table-header d-flex justify-content-between py-3 px-4">
